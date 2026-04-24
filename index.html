@@ -152,7 +152,8 @@
             height: 100vh;
             display: flex;
             align-items: center;
-            background-image: url('photo-1618005182384-a83a8bd57fbe.jpeg');
+            background-image: image-set(url('photo-1618005182384-a83a8bd57fbe-1200.jpeg') 1x,
+                    url('photo-1618005182384-a83a8bd57fbe.jpeg') 2x);
             background-size: cover;
             background-position: center;
         }
@@ -297,6 +298,21 @@
             background-size: cover;
             background-position: center;
             transition: opacity 0.8s ease;
+        }
+
+        .card-bg-devops {
+            background-image: image-set(url('photo-1618401471353-b98afee0b2eb-700.jpeg') 1x,
+                    url('photo-1618401471353-b98afee0b2eb.jpeg') 2x);
+        }
+
+        .card-bg-backend {
+            background-image: image-set(url('photo-1555066931-4365d14bab8c-700.jpeg') 1x,
+                    url('photo-1555066931-4365d14bab8c.jpeg') 2x);
+        }
+
+        .card-bg-iot {
+            background-image: image-set(url('photo-1581091226825-a6a2a5aee158-700.jpeg') 1x,
+                    url('photo-1581091226825-a6a2a5aee158.jpeg') 2x);
         }
 
         .card-bg::after {
@@ -839,7 +855,7 @@
                 <div class="cards-wrapper" id="cards-wrapper">
 
                     <div class="card" data-index="0">
-                        <div class="card-bg" style="background-image: url('photo-1618401471353-b98afee0b2eb.jpeg');">
+                        <div class="card-bg card-bg-devops">
                         </div>
                         <div class="card-inner">
                             <div class="card-header">
@@ -870,7 +886,7 @@
                     </div>
 
                     <div class="card" data-index="1">
-                        <div class="card-bg" style="background-image: url('photo-1555066931-4365d14bab8c.jpeg');">
+                        <div class="card-bg card-bg-backend">
                         </div>
                         <div class="card-inner">
                             <div class="card-header">
@@ -901,7 +917,7 @@
                     </div>
 
                     <div class="card" data-index="2">
-                        <div class="card-bg" style="background-image: url('photo-1581091226825-a6a2a5aee158.jpeg');">
+                        <div class="card-bg card-bg-iot">
                         </div>
                         <div class="card-inner">
                             <div class="card-header">
